@@ -5,72 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .btn-primary {
-        color: #c5fad5;
-        background-color: rgb(122, 64, 192);
-        border-color: rgb(122, 64, 192);
-      }
-    </style>
+
   </head>
 
   <body>
-    <style>
-      header {
-        background-image: url("r1.png");
-        background-position: center;
-        background-origin: content-box;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: "Noto Sans", sans-serif;
-      }
-      .tbox {
-        color: #317773;
-        width: 900px;
-        border: 5px solid #c9a3fa;
-        padding: 20px;
-        margin: 30px;
-        background-color: #e2d1f9;
-        text-align: justify;
-      }
-      .tbox1 {
-        color: #317773;
-        /*width: fit-content;*/
-        max-height: 200px;
-        border: 5px solid #c9a3fa;
-        padding: 15px;
-        margin: 15px;
-        background-color: #e2d1f9;
-      }
-
-      @media only screen and (min-width: 993px) {
-        #carouselExampleCaptions .carousel-item {
-          object-position: center;
-          /* width:100%; */
-          height: 70vh;
-          margin-left: 30px;
-          object-fit: contain;
-        }
-      }
-    </style>
     <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
       <header class="img-fluid">
         <center>
           <h2>Sandeep Neemkar</h2>
           <h3>A.I Undergrad</h3>
           <br />
-          <img src="pfp.jpg" class="rounded-circle" alt="..." width="20%" />
+          <img src="profile/pfp.jpg" class="rounded-circle" alt="..." width="20%" />
         </center>
       </header>
     </div>
@@ -209,7 +167,7 @@
       </section>
     </section>
 
-    <section id="skills">
+    <!-- <section id="skills">
       <button type="button" class="btn-primary"><h5>Skills</h5></button>
       <section class="tbox">
         <p>
@@ -220,7 +178,7 @@
           passion for staying up-to-date with industry trends.
         </p>
       </section>
-    </section>
+    </section> -->
 
     <section id="carousel">
       <button type="button" class="btn-primary"><h5>My BucketList</h5></button>
@@ -263,7 +221,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active text-center">
               <img
-                src="bucketlist/norway.jpg"
+                src="profile/bucketlist/norway.jpg"
                 class="d-block w-100"
                 alt="norway"
               />
@@ -274,7 +232,7 @@
             </div>
             <div class="carousel-item text-center">
               <img
-                src="bucketlist/prague.jpg"
+                src="profile/bucketlist/prague.jpg"
                 class="d-block w-100"
                 alt="prague"
               />
@@ -284,14 +242,14 @@
               </div>
             </div>
             <div class="carousel-item text-center">
-              <img src="bucketlist/italy.jpg" class="d-block w-100" alt="..." />
+              <img src="profile/bucketlist/italy.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>3. Sardinia, Italy</h5>
                 <p>pizza at streets of italy!</p>
               </div>
             </div>
             <div class="carousel-item text-center">
-              <img src="bucketlist/swiss.jpg" class="d-block w-100" alt="..." />
+              <img src="profile/bucketlist/swiss.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>4. Mt. Zermatt, Switzerland</h5>
                 <p>A walk along the countryside!</p>
@@ -299,7 +257,7 @@
             </div>
             <div class="carousel-item text-center">
               <img
-                src="bucketlist/georgia.jpg"
+                src="profile/bucketlist/georgia.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -333,30 +291,62 @@
 
     <section id="fsd" class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="btn-primary"><h5>Full-Stack Development</h5></button>
+      </section>
+    </section>
       <br>
-      <div class="container text-center">
-        <div class="row g-2">
-          <div class="col-6">
-            <button type="button" class="btn btn-primary"><div class="p-3">Assignments</div></button>
-          </div>
-          <div class="col-6">
-            <button type="button" class="btn btn-primary"> <div class="p-3"> <a href="Wordle_clone/wordle.html">Wordle</a> </div></button>
-           
-          </div>
-          <div class="col-6">
-            <button type="button" class="btn btn-primary"> <div class="p-3">Tic Tac Toe</div> </button>
-            
-          </div>
-          <div class="col-6">
-            <button type="button" class="btn btn-primary"> <div class="p-3">Photo Album</div> </button>
-            
+      <br>
+      <br>
+      <section class="fsdbox">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="profile/tictac.png" class="card-img-top"  >
+            <div class="card-body">
+              <h5 class="card-title">1. <a href="tictactoe/index.html" target="_blank">Tic Tac Toe</a></h5>
+             
+            </div>
           </div>
         </div>
-
-
-
+        <div class="col">
+          <div class="card">
+            <img src="profile/gallery.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">2. <a href="album/index.html" target="_blank">Photo Album</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="profile/wordle.jpg" class="card-img-top" alt="wordle pic">
+            <div class="card-body">
+              <h5 class="card-title">3. <a href="Wordle_clone/wordle.html" target="_blank">Wordle</a></h5>
+            </div>
+          </div>
+        </div>
       </div>
 
+    </section>
+<br>
+<br>
+      <section id="connect">
+        <button type="button" class="btn-primary"><h5>Connect</h5></button>
+         <p > 
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <a href="https://github.com/neemkarsandeep24" class="fa fa-github-square" target="_blank"></a>
+              </div>
+              <div class="col">
+                <a href="mailto:neemkarsandeep24@gmail.com" class="fa fa-envelope" target="_blank"></a>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/in/neemkar/" class="fa fa-linkedin-square" aria-hidden="true" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+         </p>
+         </section>
+         <p><a href="#">Back to Top</a></p>
   
   </body>
 </html>

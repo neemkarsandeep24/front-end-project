@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="icon.webp">
+    <title>Photo Collection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="background-color:rgb(0, 0, 0);">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Welcome to Funtional Photo Album</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <button  class="btn btn-danger navbar-btn" id="show-btn" onclick="showHiddenImages()">All</button>
+          <button class="btn btn-danger navbar-btn" onclick="audi()">Audi</button>
+          <button  class="btn btn-danger navbar-btn" onclick="bmw()">BMW </button>
+          <button class="btn btn-danger navbar-btn" onclick="volvo()"> Volvo</button>
+          <!-- <button class="btn btn-danger navbar-btn" onclick="hulk()">HUlk</button>
+          <button class="btn btn-danger navbar-btn" onclick="fd()">Hawkeye and Black Widow</button>
+          <button class="btn btn-danger navbar-btn" onclick="others()">Others</button> -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Image Processing
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <button class="btn" onclick="bright()">Brighter Images</button>
+                      <button class="btn" onclick="dim()">Dimmer Images</button>
+                      <button class="btn" onclick="gray()">Gray Scale Images</button>
+                      <button class="btn" onclick="remove()">Remove Effects</button>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <main>
+      <div class="row">
+        <div class="column">
+          <img
+            id="a1"
+            src="a1.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a2"
+            src="a2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a3"
+            src="a3.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a4"
+            src="a4.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="a5"
+            src="a5.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="audi"
+          />
+          <img
+            id="b1"
+            src="b1.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+        </div>
+        <div class="column">
+          <img
+            id="b2"
+            src="b2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+          <img
+            id="b3"
+            src="b3.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          /> 
+          <img
+            id="b4"
+            src="b4.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          /> 
+          <img
+            id="b5"
+            src="b5.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="bmw"
+          />
+          <img
+            id="v1"
+            src="v1.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v2"
+            src="v2.jpg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v3"
+            src="v3.webp"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+          <img
+            id="v4"
+            src="v4.jpeg"
+            style="width: 100%"
+            ondblclick="display(this.id)"
+            class="volvo"
+          />
+        </div>
+      </div>
+    </main>
+
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
