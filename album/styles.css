@@ -22,16 +22,16 @@
 }
 
   .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  
   .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; 
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -51,7 +51,16 @@
   #v1:hover, #v2:hover, #v3:hover, #v4:hover{
     content: url("v0.jpg");
   }
-  /* Responsive layout - makes a two column-layout instead of four columns */
+  #ms1:hover, #ms2:hover, #ms3:hover{
+    content: url("ms0.webp");
+  }
+  #m1:hover, #m2:hover, #m3:hover, #m4:hover, #m5:hover{
+    content: url("m0.jpg");
+  }
+  #lx1:hover, #lx2:hover, #lx3:hover{
+    content: url("lx0.jpg");
+  }
+
   @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
@@ -60,7 +69,7 @@
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ 
   @media screen and (max-width: 600px) {
     .column {
       -ms-flex: 100%;

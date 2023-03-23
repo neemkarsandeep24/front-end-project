@@ -53,28 +53,28 @@ function checkImageColor(imageSrc) {
   }
 
   function bright(){
-    var ids = ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4"];
+    var ids = ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
     for (var i = 0; i < ids.length; i++) {
       var img = document.getElementById(ids[i]);
       img.style.filter = "brightness(160%)";
     }
   }
   function dim(){
-    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4"];
+    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
     for (var i = 0; i < ids.length; i++) {
       var img = document.getElementById(ids[i]);
       img.style.filter = "brightness(50%)";
     }
   }
   function gray(){
-    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4"];
+    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
     for (var i = 0; i < ids.length; i++) {
       var img = document.getElementById(ids[i]);
       img.style.filter = "grayscale(1)";
     }
   }
   function remove(){
-    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4"];
+    var ids =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
     for (var i = 0; i < ids.length; i++) {
       var img = document.getElementById(ids[i]);
       img.style.filter = "brightness(100%)";
@@ -88,10 +88,12 @@ function checkImageColor(imageSrc) {
       hiddenImages[i].style.display = "block";
     }
   }
-  var imgs =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4"];
+  var imgs =  ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
+
+
   function audi() {
     showHiddenImages()
-    var ids =["b1","b2","b3","b4","b5","v1","v2","v3","v4"] // replace with your image IDs
+    var ids =["b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"] 
   
     for (var i = 0; i < ids.length; i++) {
       var img = document.getElementById(ids[i]);
@@ -102,48 +104,48 @@ function checkImageColor(imageSrc) {
   }
   function bmw() {
     showHiddenImages()
-    var imgIds = ["a1","a2","a3","a4","a5","v1","v2","v3","v4"] // array of image ids
+    var imgIds = ["a1","a2","a3","a4","a5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"] 
     for (var i = 0; i < imgIds.length; i++) {
-      var img = document.getElementById(imgIds[i]); // get image element by id
-      img.style.display = "none"; // hide the image
+      var img = document.getElementById(imgIds[i]);  
+      img.style.display = "none";   
     }
     
   } 
   function volvo() {
     showHiddenImages()
-    var imgids= ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5"]// array of image ids
+    var imgids= ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","lx1","lx2","lx3","m1","m2","m3","m4","m5","ms1","ms2","ms3"]
     for (var i = 0; i < imgids.length; i++) {
-      var img = document.getElementById(imgids[i]); // get image element by id
-      img.style.display = "none"; // hide the image
+      var img = document.getElementById(imgids[i]);  
+      img.style.display = "none";   
     }
     
   } 
-  // function hulk() {
-  //   showHiddenImages()
-  //   var imgIds = ["a","a1", "a2", "a3","a4", "a5", "a6","a7", "a8", "a9","a10", "a11" ,"a13", "a14", "a15" , "a16", "a17", "a18" , "a19", "a20", "a21" , "a22", "a23", "a24" , "a25", "a26", "a27" ];
-  //   for (var i = 0; i < imgIds.length; i++) {
-  //     var img = document.getElementById(imgIds[i]); // get image element by id
-  //     img.style.display = "none"; // hide the image
-  //   }
+  function lexus() {
+    showHiddenImages()
+    var imgIds = ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","m1","m2","m3","m4","m5","ms1","ms2","ms3"];
+    for (var i = 0; i < imgIds.length; i++) {
+      var img = document.getElementById(imgIds[i]);  
+      img.style.display = "none";   
+    }
     
-  // } 
-  // function fd() {
-  //   showHiddenImages()
-  //   var imgIds = ["a","a1", "a2", "a3","a4", "a5", "a6","a7", "a8", "a9","a12" ,"a13", "a14", "a15" , "a16", "a17", "a18" , "a19", "a20", "a21" ,"a24" , "a25", "a26", "a27" , "a28", "a29", "a30"];
-  //   for (var i = 0; i < imgIds.length; i++) {
-  //     var img = document.getElementById(imgIds[i]); // get image element by id
-  //     img.style.display = "none"; // hide the image
-  //   }
+  } 
+  function maserati() {
+    showHiddenImages()
+    var imgIds = ["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","m1","m2","m3","m4","m5"];
+    for (var i = 0; i < imgIds.length; i++) {
+      var img = document.getElementById(imgIds[i]);  
+      img.style.display = "none";   
+    }
     
-  // } 
-  // function others() {
-  //   showHiddenImages()
-  //   var imgIds = ["a","a1", "a2", "a3","a4", "a5", "a6","a7", "a8", "a9","a10", "a11", "a12" ,"a13", "a14", "a15" , "a16", "a17", "a18" , "a19" , "a22", "a23", "a28", "a29", "a30"];
-  //   for (var i = 0; i < imgIds.length; i++) {
-  //     var img = document.getElementById(imgIds[i]); // get image element by id
-  //     img.style.display = "none"; // hide the image
-  //   }
+  } 
+  function merc() {
+    showHiddenImages()
+    var imgIds =["a1","a2","a3","a4","a5","b1","b2","b3","b4","b5","v1","v2","v3","v4","lx1","lx2","lx3","ms1","ms2","ms3"];
+    for (var i = 0; i < imgIds.length; i++) {
+      var img = document.getElementById(imgIds[i]); 
+      img.style.display = "none"; 
+    }
     
-  // } 
+  } 
 
   
